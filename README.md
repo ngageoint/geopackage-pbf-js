@@ -29,7 +29,7 @@ const tableName = 'features';
 const converter = new PBFToGeoPackage();
 converter.convert({ pbf: pbfFile, geoPackage: geoPackageFile, tableName: tableName }).then(() => {
   console.log('File conversion complete');
-  console.log('Converted %s to %s', geoJSONFile, geoPackageFile);
+  console.log('Converted %s to %s', pbfFile, geoPackageFile);
 });
 ```
 
